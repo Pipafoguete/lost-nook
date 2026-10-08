@@ -1,0 +1,36 @@
+name: Publicar site público no GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar código público
+        uses: actions/checkout@v6
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Preparar arquivos estáticos seguros
+        run: node scripts/build-pages.mjs
+      - name: Enviar arquivos do site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./dist
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
