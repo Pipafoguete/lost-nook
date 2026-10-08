@@ -1,0 +1,17 @@
+data/
+server.cjs
+central.html
+central.js
+central.css
+login.html
+login.js
+login.css
+package.json
+README.md
+scripts/export-public-data.mjs
+.env
+.env.*
+!.env.example
+*.bak
+*.backup
+dist/

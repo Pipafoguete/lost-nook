@@ -1,0 +1,166 @@
+{
+  "projects": [
+    {
+      "name": "LUNA",
+      "slug": "luna",
+      "tagline": "Minha companheira de ideias e inteligência artificial pessoal.",
+      "description": "Minha inteligência artificial pessoal.",
+      "longDescription": "A LUNA é minha IA pessoal, um projeto para explorar conversas, organização, ferramentas e formas novas de interagir com tecnologia. Um espaço para experimentar com calma e construir aos poucos.",
+      "category": "Pessoal",
+      "status": "Em andamento",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "LOST NOOK",
+      "slug": "lost-nook",
+      "tagline": "Um canto pequeno, um universo inteiro de possibilidades.",
+      "description": "Minha central pessoal para projetos e experimentos.",
+      "longDescription": "O Lost Nook é meu cantinho na internet para reunir projetos, ideias, experimentos e coisas que descubro pelo caminho. A Central é o lugar de organizar esse universo; o site público é a janela para compartilhar o que escolho mostrar.",
+      "category": "Profissional",
+      "status": "Em andamento",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "BLENDER",
+      "slug": "blender",
+      "tagline": "Mundos e objetos ganhando forma em três dimensões.",
+      "description": "Projetos de animação, 3D e renderização.",
+      "longDescription": "Experimentos de modelagem, animação, materiais e renderização feitos no Blender. Este espaço vai reunir os trabalhos e estudos que eu decidir compartilhar.",
+      "category": "Experimentos",
+      "status": "Ideia",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "ROBLOX",
+      "slug": "roblox",
+      "tagline": "Jogos, mundos e experiências interativas.",
+      "description": "Projetos, experiências e automações.",
+      "longDescription": "Um lugar para acompanhar minhas experiências com criação de jogos e mundos no Roblox. Vou adicionando novidades, imagens e detalhes conforme cada ideia for tomando forma.",
+      "category": "Jogos",
+      "status": "Ideia",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "MINECRAFT",
+      "slug": "minecraft",
+      "tagline": "Construções, experiências e mundos de blocos.",
+      "description": "Experimentos envolvendo Minecraft, captura e 3D.",
+      "longDescription": "Meus projetos, construções e experimentos relacionados a Minecraft. Um caderno aberto para guardar o que estou criando e compartilhar os registros mais legais.",
+      "category": "Jogos",
+      "status": "Ideia",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "AUTOMAÇÕES",
+      "slug": "automacoes",
+      "tagline": "Pequenas ferramentas que deixam o trabalho mais leve.",
+      "description": "Ferramentas criadas para automatizar tarefas.",
+      "longDescription": "Scripts e ferramentas para simplificar tarefas repetitivas e conectar ideias. Cada automação começa com uma pequena coisa que eu gostaria de deixar mais fácil.",
+      "category": "Profissional",
+      "status": "Ideia",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "IA",
+      "slug": "ia",
+      "tagline": "Explorando o que dá para construir com inteligência artificial.",
+      "description": "Experimentos com inteligência artificial.",
+      "longDescription": "Experimentos com modelos, interfaces e ferramentas de inteligência artificial. Vou reunindo aqui testes e projetos que saírem do rascunho.",
+      "category": "Experimentos",
+      "status": "Ideia",
+      "coverImage": "",
+      "gallery": []
+    },
+    {
+      "name": "EXPERIMENTOS",
+      "slug": "experimentos",
+      "tagline": "Ideias curiosas, protótipos e caminhos inesperados.",
+      "description": "Ideias que ainda estão tomando forma.",
+      "longDescription": "Nem toda ideia precisa saber exatamente onde vai chegar. Este espaço é para protótipos e experiências que estão começando a ganhar forma.",
+      "category": "Experimentos",
+      "status": "Ideia",
+      "coverImage": "",
+      "gallery": []
+    }
+  ],
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "description": "Código e projetos em andamento.",
+      "category": "Desenvolvimento"
+    },
+    {
+      "name": "Blender",
+      "url": "https://www.blender.org",
+      "description": "Criação 3D, animação e arte.",
+      "category": "Ferramentas"
+    },
+    {
+      "name": "Roblox",
+      "url": "https://www.roblox.com",
+      "description": "Experiências e mundos interativos.",
+      "category": "Jogos"
+    },
+    {
+      "name": "Minecraft",
+      "url": "https://www.minecraft.net",
+      "description": "Construções e aventuras em blocos.",
+      "category": "Jogos"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.com",
+      "description": "Comunidades e conversas.",
+      "category": "Comunidade"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://youtube.com",
+      "description": "Vídeos, referências e descobertas.",
+      "category": "Vídeo"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com",
+      "description": "Pequenos registros pelo caminho.",
+      "category": "Redes sociais"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https://pinterest.com",
+      "description": "Referências para ideias futuras.",
+      "category": "Inspiração"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://spotify.com",
+      "description": "Trilhas para trabalhar de madrugada.",
+      "category": "Áudio"
+    },
+    {
+      "name": "itch.io",
+      "url": "https://itch.io",
+      "description": "Jogos independentes e experimentos.",
+      "category": "Jogos"
+    },
+    {
+      "name": "MDN",
+      "url": "https://developer.mozilla.org",
+      "description": "Documentação para desenvolvimento web.",
+      "category": "Aprendizado"
+    },
+    {
+      "name": "Are.na",
+      "url": "https://www.are.na",
+      "description": "Coleções, referências e conexões.",
+      "category": "Inspiração"
+    }
+  ]
+}

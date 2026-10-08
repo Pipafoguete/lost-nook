@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Lost Nook</title>
+
+    <meta
+        name="description"
+        content="Lost Nook — um cantinho na internet para projetos, ideias, experiências e criações."
+    >
+
+    <meta
+        name="theme-color"
+        content="#080706"
+    >
+
+    <!-- ÍCONE DO SITE -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="./assets/icons/lost-koffie2.png?v=2"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css?v=20261008-contact-refresh"
+    >
+    <link rel="stylesheet" href="social.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+
+<body class="public-site">
+
+    <!-- =====================================================
+         PEQUENOS DETALHES DE ATMOSFERA
+    ====================================================== -->
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <div class="grain"></div>
+
+
+    <!-- =====================================================
+         NAVEGAÇÃO
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <a
+            href="#inicio"
+            class="logo"
+        >
+            LOST <span>NOOK</span>
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="#inicio">
+                INÍCIO
+            </a>
+
+            <a href="#sobre">
+                SOBRE
+            </a>
+
+            <a href="#projetos">
+                PROJETOS
+            </a>
+
+            <a href="#social">
+                SOCIAL
+            </a>
+
+            <a href="#contato">
+                CONTATO
+            </a>
+
+            <a href="central.html" class="nav-central">
+                ENTRAR ↗
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         CONTEÚDO
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             INÍCIO
+        ================================================== -->
+
+        <section
+            id="inicio"
+            class="hero"
+        >
+
+            <div class="hero-glow"></div>
+
+            <div class="window-light"></div>
+
+            <canvas class="hero-rain-scene" id="hero-rain-scene" aria-label="Janela de café aconchegante à noite, com chuva e luzes da cidade" role="img"></canvas>
+
+
+            <div class="section-number">
+                01
+            </div>
+
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    BEM-VINDO AO MEU CANTO PERDIDO NESSE UNIVERSO
+                </p>
+
+
+                <h1>
+                    LOST
+                    <span>NOOK</span>
+                </h1>
+
+
+                <p class="hero-description">
+                    Um canto perdido na internet para tudo que eu
+                    crio, descubro e invento pelo caminho.
+                </p>
+
+
+                <a
+                    href="#projetos"
+                    class="hero-button"
+                >
+                    EXPLORAR
+                </a>
+
+            </div>
+
+
+            <div class="hero-bottom-note">
+                <span>☕</span>
+                feito devagar, de madrugada
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOBRE
+        ================================================== -->
+
+        <section
+            id="sobre"
+            class="about-section"
+        >
+
+            <div class="section-number">
+                02
+            </div>
+
+
+            <div class="about-stars">
+                <span>✦</span>
+                <span>·</span>
+                <span>✧</span>
+                <span>·</span>
+                <span>✦</span>
+            </div>
+
+            <svg class="about-hanging-plants" viewBox="0 0 260 360" aria-hidden="true">
+                <g fill="none" stroke="#87715a" stroke-opacity=".52" stroke-width="1.4">
+                    <path d="M72 0v42M100 0v42M128 0v42" />
+                    <path d="M182 0v34M204 0v34" />
+                </g>
+                <path d="M65 40h70l-7 36H72z" fill="#34251d" stroke="#a77b58" stroke-opacity=".55" />
+                <path d="M70 45h60" stroke="#d6a477" stroke-opacity=".28" />
+                <g fill="none" stroke="#71866a" stroke-width="2" stroke-linecap="round">
+                    <path d="M100 74c-4 32 19 42 7 70s9 40-3 67 7 41-3 66" />
+                    <path d="M190 34c5 28-13 43-2 67s-7 35 3 55 0 33 11 49" />
+                    <path d="M89 75c-10 18-18 30-12 49m32-4c15 13 23 26 18 43m-23 21c-14 11-20 25-15 39m24 8c13 11 20 23 16 38" />
+                    <path d="M193 83c-12 12-16 24-10 37m15 4c12 11 17 23 13 36m-12 16c-11 10-14 21-9 33" />
+                </g>
+                <g fill="#71866a" fill-opacity=".78" stroke="#a3a17c" stroke-opacity=".28" stroke-width=".8">
+                    <path d="M89 80c-22-15-28-5-12 13 5 5 11 4 12-13zm-11 42c-24-8-27 5-7 17 7 4 12-2 7-17zm51-1c20-17 30-7 14 10-6 6-12 4-14-10zm-27 42c-21-15-29-5-12 12 6 6 12 4 12-12zm24 25c21-17 31-6 13 11-6 6-12 3-13-11zm-27 35c-20-15-28-5-11 12 6 5 11 3 11-12zm28 22c20-16 29-5 12 11-6 6-11 4-12-11zm54-135c-20-14-27-4-10 12 6 5 11 3 10-12zm30 8c19-16 28-6 12 11-6 5-11 3-12-11zm-12 42c-20-13-27-3-10 12 6 5 11 3 10-12zm23 12c19-15 28-5 12 11-6 5-11 3-12-11zm-20 37c-18-13-25-4-9 10 5 5 10 3 9-10z" />
+                </g>
+            </svg>
+
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    UM POUCO SOBRE ESTE LUGAR
+                </p>
+
+
+                <h2>
+                    MEU ESPAÇO
+                    <span>NA INTERNET</span>
+                </h2>
+
+
+                <div class="about-text">
+
+                    <p>
+                        O Lost Nook é o meu espaço para reunir e divulgar
+                        projetos, ideias, experimentos e coisas
+                        que simplesmente achei interessante.
+                    </p>
+
+                    <p>
+                        Aqui eu trabalho principalmente com programação,
+                        desenvolvendo sites, addons, jogos e tudo mais que
+                        me desperta interesse e vontade de criar.
+                    </p>
+
+
+                    <p class="about-highlight">
+                        Um canto pequeno, um universo inteiro de possibilidades.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-corner">
+                lostkoffie / 01
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =================================================
+             PROJETOS
+        ================================================== -->
+
+        <section
+            id="projetos"
+            class="projects-section"
+        >
+
+            <div class="projects-stage">
+
+                <div id="projects3d"></div>
+
+
+                <div class="projects-interface">
+
+
+                    <!-- CABEÇALHO -->
+
+                    <div class="projects-header">
+
+                        <div class="section-number">
+                            03
+                        </div>
+
+
+                        <p class="eyebrow">
+                            O QUE ESTÁ SENDO CRIADO
+                        </p>
+
+
+                        <h2>
+                            MEUS
+                            <span>PROJETOS</span>
+                        </h2>
+
+
+                        <p>
+                            Explore os lugares que fazem parte
+                            do Lost Nook.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MENU -->
+
+                    <div class="projects-menu">
+
+                        <button data-project="0">
+                            <span>01</span>
+                            LUNA
+                        </button>
+
+                        <button data-project="1">
+                            <span>02</span>
+                            LOST NOOK
+                        </button>
+
+                        <button data-project="2">
+                            <span>03</span>
+                            BLENDER
+                        </button>
+
+                        <button data-project="3">
+                            <span>04</span>
+                            ROBLOX
+                        </button>
+
+                        <button data-project="4">
+                            <span>05</span>
+                            MINECRAFT
+                        </button>
+
+                        <button data-project="5">
+                            <span>06</span>
+                            AUTOMAÇÕES
+                        </button>
+
+                        <button data-project="6">
+                            <span>07</span>
+                            IA
+                        </button>
+
+                        <button data-project="7">
+                            <span>08</span>
+                            EXPERIMENTOS
+                        </button>
+
+                    </div>
+
+
+                    <!-- INFORMAÇÕES -->
+
+                    <div class="project-info">
+
+                        <div id="project-number">
+                            PROJETO 01
+                        </div>
+
+
+                        <h3 id="project-name">
+                            LUNA
+                        </h3>
+
+
+                        <p id="project-description">
+                            Minha inteligência artificial pessoal.
+                        </p>
+                        <a class="project-open-link" id="project-open-link" href="/projetos/luna" hidden>ABRIR PROJETO <span>↗</span></a>
+
+                    </div>
+
+
+                    <div class="projects-hint">
+                        ROLE PARA EXPLORAR
+                    </div>
+
+
+                    <div class="projects-coffee-note">
+                        ☕ &nbsp; uma coisa de cada vez
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOCIAL
+        ================================================== -->
+
+        <section id="social" class="social-section">
+            <div class="social-content">
+                <div class="social-heading-row"><div><p class="eyebrow">MAPA DOS MEUS CANTOS</p><h2>ENCONTRE-ME <span>POR AÍ</span></h2><p class="social-description">Projetos, comunidades, jogos, ferramentas e inspirações espalhados pela internet.</p></div></div>
+                <div class="social-controls"><label class="social-search-wrap"><span>⌕</span><input id="social-search" type="search" placeholder="Buscar um canto…" aria-label="Buscar links"></label><div id="social-filters" class="social-filters" aria-label="Filtrar links"></div></div>
+                <div id="social-grid" class="social-grid social-directory" aria-live="polite"></div>
+                <p id="social-empty" class="social-empty" hidden>Nenhum link por aqui ainda. Você pode adicionar seus cantos pela Central.</p>
+            </div>
+        </section>
+
+        <section
+            id="contato"
+            class="contact-section"
+        >
+
+            <div class="section-number">
+                05
+            </div>
+
+
+            <div class="contact-content">
+                <div class="contact-copy">
+                    <p class="eyebrow">SE VOCÊ CHEGOU ATÉ AQUI</p>
+                    <h2>VAMOS<br><span>CRIAR ALGO?</span></h2>
+                    <p class="contact-description">
+                        Se algum canto deste universo chamou sua atenção,
+                        meus links estão por aqui. Ideias, projetos e boas
+                        conversas são sempre bem-vindos.
+                    </p>
+                    <div class="contact-actions">
+                        <a class="contact-primary" href="#social">
+                            <span>01</span> ENCONTRAR MEUS LINKS <b aria-hidden="true">↗</b>
+                        </a>
+                        <a class="contact-secondary" href="#projetos">
+                            OU VOLTAR AOS PROJETOS <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                    <div class="contact-sign">— Lost Nook <span>feito devagar, de madrugada</span></div>
+                </div>
+
+                <aside class="contact-note" aria-label="Bilhete do Lost Nook">
+                    <div class="contact-note-top"><span>UM BILHETE DE MADRUGADA</span><span>05 / 05</span></div>
+                    <div class="contact-note-star" aria-hidden="true">✦</div>
+                    <p>Toda coisa grande começa como uma conversa pequena.</p>
+                    <div class="contact-note-rule"></div>
+                    <small>Sem pressa. Com espaço para imaginar.</small>
+                </aside>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div>
+            LOST NOOK
+        </div>
+
+
+        <p>
+            Um cantinho para tudo que eu crio.
+        </p>
+
+
+        <span>
+            © 2026 Lost Nook
+        </span>
+        <a href="central.html">CENTRAL PRIVADA ↗</a>
+
+    </footer>
+
+
+    <script
+        type="module"
+        src="script.js?v=20261008-public-image-fix"
+    ></script>
+    <script src="ambient.js?v=20261008-about-plants-steam" defer></script>
+    <script src="social.js?v=20261008-public-image-fix"></script>
+
+</body>
+
+</html>
